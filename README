@@ -37,7 +37,7 @@ Add template:
 
 ---Template:Table
 <noinclude>
-Так будут выглядеть страницы для таблиц. 
+Template to be used for DB tables
 </noinclude><includeonly>{{#default_form:{{#if:{{{DefaultForm|}}}|{{{DefaultForm}}}|Table}}}}</includeonly>{{#if:{{{Version|}}}|:''Product/version: '''{{{Version}}}'''''
 }}{{#if:{{{Main|}}}|:''Main article: '''[[{{{Main}}}]]'''''
 }}
@@ -50,7 +50,7 @@ Add template:
 
 ---Template:DatabaseTableField:
 <noinclude>
-Этот шаблон будет служить для добавления полей в форму создания таблицы базы данных
+Template to be used for DB tables columns
 [[Категория:Database_Tables]]
 </noinclude><div class="noexcerpt">
 ==={{{Name}}}===
@@ -65,10 +65,10 @@ Add template:
 
 ---Form:Table
 <noinclude>
-Форма создания страницы о таблице БД.
+DB table creation form
 
-== Введите имя таблицы ==
-Введите имя таблицы в поле ниже.
+== Enter table name ==
+Please enter the table name below
 {{#forminput:form=Table|size=40|button text=Create or edit database table|autocomplete on category=Database Tables|namespace=Table}}
 [[Category:Database_Tables]]
 </noinclude><includeonly>
