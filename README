@@ -1,3 +1,10 @@
+# DISCLAIMER
+The implementation is quite shitty and full of bugs. 
+It was mostly created to test the approach, not to be used in prod.
+Current approach for prod is to generate text description for DB schema graph and build it using something like Mermaid.
+
+
+# Basic info
 Extension provides tools for DB schema browse.
 It uses NS_DB ('Table:')  namespace and semantic mediawiki subobject which looks like:
 
@@ -51,7 +58,7 @@ Template to be used for DB tables
 ---Template:DatabaseTableField:
 <noinclude>
 Template to be used for DB tables columns
-[[Категория:Database_Tables]]
+[[ГЉГ ГІГҐГЈГ®Г°ГЁГї:Database_Tables]]
 </noinclude><div class="noexcerpt">
 ==={{{Name}}}===
 {{#if:{{{Version|}}}|:''Version: '''{{{Version}}}'''''}}
@@ -76,7 +83,7 @@ Please enter the table name below
 {{{for template|Table}}}
 {| class="formtable"
 ! Table name:
-| {{{field|name|mandatory|size=150|default={{PAGENAME}}|placeholder=Имя таблицы.}}}
+| {{{field|name|mandatory|size=150|default={{PAGENAME}}|placeholder=Г€Г¬Гї ГІГ ГЎГ«ГЁГ¶Г».}}}
 |-
 ! Product version:
 | {{{field|Version|input type=tokens|values=1,1.1,2,3}}}
@@ -85,7 +92,7 @@ Please enter the table name below
 | {{{field|categories|input type=tree|list|mandatory|hideroot|top category=Categories(DB)|width=290|height=400|depth=1}}}
 |-
 ! Main article:
-| {{{field|Main|size=150|placeholder=Статья, в которой описан функционал этой таблицы (необязательное поле).|values from category=Knowledgebase}}}
+| {{{field|Main|size=150|placeholder=Г‘ГІГ ГІГјГї, Гў ГЄГ®ГІГ®Г°Г®Г© Г®ГЇГЁГ±Г Г­ ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г« ГЅГІГ®Г© ГІГ ГЎГ«ГЁГ¶Г» (Г­ГҐГ®ГЎГїГ§Г ГІГҐГ«ГјГ­Г®ГҐ ГЇГ®Г«ГҐ).|values from category=Knowledgebase}}}
 |-
 ! Description:
 | {{{field|Description|input type=textarea|editor=wikieditor|mandatory}}}
