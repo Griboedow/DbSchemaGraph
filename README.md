@@ -16,7 +16,7 @@ It uses NS_DB ('Table:')  namespace and semantic mediawiki subobject which looks
 
 to do the job
 
-== To include ==
+## To include
 //Semantic graph
 require_once "$IP/extensions/DbSchemaGraph/DbSchemaGraph.php";
 
@@ -30,7 +30,7 @@ or
 to include the extension
 
 
-==Create wikitables==
+## Create wikitables
 To be able to use it you should first add DB tables as wiki pages:
 
 LocalSettings.php:
