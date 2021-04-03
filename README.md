@@ -1,6 +1,8 @@
 # DISCLAIMER
 The implementation is quite shitty and full of bugs. 
+
 It was mostly created to test the approach, not to be used in prod.
+
 Current approach for prod is to generate text description for DB schema graph and build it using something like Mermaid.
 
 
